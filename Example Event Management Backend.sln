@@ -4,6 +4,10 @@ VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils.Examples.EventManager", "ExampleEventManagementBackend\Utils.Examples.EventManager.csproj", "{0EA0FE7C-1648-4906-A9A3-C5E4DA3ED7D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagerBackendInstaller", "EventManagerBackendInstaller\EventManagerBackendInstaller.csproj", "{58A7DB71-CA42-4BC3-A939-92120DFDC33A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Shared", "Shared\Shared.shproj", "{E01FEFB0-C0E1-4043-AC36-D7089931E670}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,11 +18,20 @@ Global
 		{0EA0FE7C-1648-4906-A9A3-C5E4DA3ED7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EA0FE7C-1648-4906-A9A3-C5E4DA3ED7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EA0FE7C-1648-4906-A9A3-C5E4DA3ED7D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1C9C1820-AA26-4AE7-95D9-0E178C2B979D}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\Shared.projitems*{0ea0fe7c-1648-4906-a9a3-c5e4da3ed7d9}*SharedItemsImports = 5
+		Shared\Shared.projitems*{58a7db71-ca42-4bc3-a939-92120dfdc33a}*SharedItemsImports = 5
+		Shared\Shared.projitems*{e01fefb0-c0e1-4043-ac36-d7089931e670}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
