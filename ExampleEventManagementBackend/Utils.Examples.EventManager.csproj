@@ -27,6 +27,9 @@
   </ItemGroup>
   
   <ItemGroup>
+    <PackageReference Include="Skyline.DataMiner.Dev.Common" Version="10.6.2.2" />
+    <PackageReference Include="Skyline.DataMiner.SDM.Abstractions" Version="0.3.1" />
+    <PackageReference Include="Skyline.DataMiner.SDM.SourceGenerator" Version="0.3.1" />
     <PackageReference Include="Skyline.DataMiner.Utils.SecureCoding.Analyzers" Version="2.2.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
