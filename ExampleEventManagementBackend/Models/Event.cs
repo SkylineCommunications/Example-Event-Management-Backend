@@ -21,7 +21,7 @@ namespace Skyline.DataMiner.Utils.Examples.EventManager.Models
 
         public EventPriority Priority { get; set; }
 
-        public List<Package> AdditionalPackages { get; set; } = new List<Package>();
+        public List<Language> Languages { get; set; } = new List<Language>();
 
     }
 }

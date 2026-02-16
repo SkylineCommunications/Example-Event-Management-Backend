@@ -65,19 +65,32 @@
 		private void InstallAdditionalPackagesSection(DomHelper helper)
 		{
 			var section = new SectionDefinitionBuilder()
-				.WithID(EventDomMapper.AdditionalPackages.SectionDefinitionId)
-				.WithName(nameof(EventDomMapper.AdditionalPackages))
-				.AddFieldDescriptor(new GenericEnumFieldDescriptorBuilder()
-					.WithID(EventDomMapper.AdditionalPackages.Type)
-					.WithName(nameof(EventDomMapper.AdditionalPackages.Type))
+				.WithID(EventDomMapper.Languages.SectionDefinitionId)
+				.WithName(nameof(EventDomMapper.Languages))
+                .AddFieldDescriptor(new FieldDescriptorBuilder()
+                    .WithID(EventDomMapper.Languages.Name)
+                    .WithName(nameof(EventDomMapper.Languages.Name))
+                    .WithType(typeof(string))
+                    .WithIsOptional(true)
+                    .WithTooltip("The name of the language"))
+                .AddFieldDescriptor(new GenericEnumFieldDescriptorBuilder()
+					.WithID(EventDomMapper.Languages.AudioType)
+					.WithName(nameof(EventDomMapper.Languages.AudioType))
 					.WithIsOptional(true)
-					.WithTooltip("The type of the package")
+					.WithTooltip("The audio type of the language")
 					.WithEnumType(GenericEnumFieldDescriptorBuilder.EnumType.Int)
-					.AddEnumValue(new GenericEnumEntry<int>("VoiceOver", 0))
-					.AddEnumValue(new GenericEnumEntry<int>("Drone", 1)))
-				.Build();
+					.AddEnumValue(new GenericEnumEntry<int>("Stereo", 0))
+					.AddEnumValue(new GenericEnumEntry<int>("Surround", 1))
+					.AddEnumValue(new GenericEnumEntry<int>("Mono", 2)))
+                 .AddFieldDescriptor(new FieldDescriptorBuilder()
+                    .WithID(EventDomMapper.Languages.CcSupplierCompanyName)
+                    .WithName(nameof(EventDomMapper.Languages.CcSupplierCompanyName))
+                    .WithType(typeof(string))
+                    .WithIsOptional(true)
+                    .WithTooltip("The cc supplier company name"))
+                .Build();
 
-			Import(helper.SectionDefinitions, SectionDefinitionExposers.ID.Equal(EventDomMapper.AdditionalPackages.SectionDefinitionId.Id), section);
+			Import(helper.SectionDefinitions, SectionDefinitionExposers.ID.Equal(EventDomMapper.Languages.SectionDefinitionId.Id), section);
 		}
 
 		private void InstallEventDefinition(DomHelper helper)
@@ -94,7 +107,7 @@
 				})
 				.AddSectionDefinitionLink(new Skyline.DataMiner.Net.Apps.Sections.SectionDefinitions.SectionDefinitionLink
 				{
-					SectionDefinitionID = EventDomMapper.AdditionalPackages.SectionDefinitionId,
+					SectionDefinitionID = EventDomMapper.Languages.SectionDefinitionId,
 					AllowMultipleSections = true,
 					IsOptional = true,
 					IsSoftDeleted = false,

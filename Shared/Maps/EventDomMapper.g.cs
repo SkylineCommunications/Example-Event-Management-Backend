@@ -15,25 +15,27 @@ namespace Skyline.DataMiner.Utils.Examples.EventManager.Models
     internal static class EventDomMapper
     {
         internal const string ModuleId = "exampleventmgmt";
-        internal static DomDefinitionId DomDefinitionId = new DomDefinitionId(new Guid("9705e91a-ae02-4298-8329-a07b76c83ecb"))
+        internal static DomDefinitionId DomDefinitionId = new DomDefinitionId(new Guid("b02d261b-1682-4a58-9751-93f79188fa4b"))
         {ModuleId = ModuleId};
         internal static class EventProperties
         {
-            internal static SectionDefinitionID SectionDefinitionId = new SectionDefinitionID(new Guid("6f7ead6c-134a-4314-94b4-704eecd83b6a"))
+            internal static SectionDefinitionID SectionDefinitionId = new SectionDefinitionID(new Guid("41c3b34c-d30a-4f13-b727-318588f701c9"))
             {ModuleId = ModuleId};
-            internal static FieldDescriptorID Name = new FieldDescriptorID(new Guid("f32ee4e1-a6de-441d-ab86-8c79468bd587"));
-            internal static FieldDescriptorID Description = new FieldDescriptorID(new Guid("34c12044-2216-48fd-9bb3-2f36d34ba2dc"));
-            internal static FieldDescriptorID Start = new FieldDescriptorID(new Guid("17e71498-9388-4df4-a564-9d3b4e961d4b"));
-            internal static FieldDescriptorID End = new FieldDescriptorID(new Guid("6711bbbb-1cfa-4f50-a2e7-f7a553769941"));
-            internal static FieldDescriptorID Type = new FieldDescriptorID(new Guid("149ee12b-2f59-45ca-a944-f97135f2b0fc"));
-            internal static FieldDescriptorID Priority = new FieldDescriptorID(new Guid("aa153d78-e013-4f88-a560-71d5c4bf337a"));
+            internal static FieldDescriptorID Name = new FieldDescriptorID(new Guid("e2b1f3bc-929c-4479-864b-36f2caa4621e"));
+            internal static FieldDescriptorID Description = new FieldDescriptorID(new Guid("ac0397a9-ed7c-4e2f-bf67-0f15dff42795"));
+            internal static FieldDescriptorID Start = new FieldDescriptorID(new Guid("6ae36e22-0d75-44eb-8483-73fcf3d345ff"));
+            internal static FieldDescriptorID End = new FieldDescriptorID(new Guid("ace372b2-6aa4-4563-bd63-1d04414e3b42"));
+            internal static FieldDescriptorID Type = new FieldDescriptorID(new Guid("bc4dca22-fa4b-4a7b-9214-f86865bcd122"));
+            internal static FieldDescriptorID Priority = new FieldDescriptorID(new Guid("204fff69-ecd0-44dd-9a88-083a21e7363f"));
         }
 
-        internal static class AdditionalPackages
+        internal static class Languages
         {
-            internal static SectionDefinitionID SectionDefinitionId = new SectionDefinitionID(new Guid("e8916c8d-e7ce-44b4-b607-da349840f9d0"))
+            internal static SectionDefinitionID SectionDefinitionId = new SectionDefinitionID(new Guid("666cf7ff-b1d1-49f6-927e-730a996233c7"))
             {ModuleId = ModuleId};
-            internal static FieldDescriptorID Type = new FieldDescriptorID(new Guid("3d0f5bc6-a3a8-4bf4-b099-41e38deef89b"));
+            internal static FieldDescriptorID Name = new FieldDescriptorID(new Guid("f7ca8f93-e8fc-48ce-af3a-269f501f7153"));
+            internal static FieldDescriptorID AudioType = new FieldDescriptorID(new Guid("12d5f206-ed13-4226-8dd8-1534ff3b01ba"));
+            internal static FieldDescriptorID CcSupplierCompanyName = new FieldDescriptorID(new Guid("df48eb49-1646-4633-a785-33edf1e4cae1"));
         }
     }
 }

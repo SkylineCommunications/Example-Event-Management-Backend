@@ -1,8 +1,9 @@
 ﻿namespace Skyline.DataMiner.Utils.Examples.EventManager.Models
 {
-    public enum PackageType
+    public enum LanguageAudioType
     {
-        VoiceOver,
-        Drone,
+        Stereo,
+        Surround,
+        Mono,
     }
 }
