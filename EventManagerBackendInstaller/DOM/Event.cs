@@ -1,14 +1,15 @@
 ﻿namespace EventInstallBackEnd.DOM
 {
 	using System;
+
 	using Skyline.DataMiner.Net.Apps.DataMinerObjectModel;
 	using Skyline.DataMiner.Net.GenericEnums;
 	using Skyline.DataMiner.Net.Messages.SLDataGateway;
 	using Skyline.DataMiner.Net.Sections;
     using Skyline.DataMiner.Utils.DOM.Builders;
-    using Skyline.DataMiner.Utils.Examples.EventManager.Models;
+    using Skyline.DataMiner.Utils.Examples.EventManagement.Models;
 
-    public partial class DomInstaller
+    internal partial class DomInstaller
 	{
 		private void InstallEventPropertiesSection(DomHelper helper)
 		{
@@ -60,6 +61,7 @@
 				.Build();
 
 			Import(helper.SectionDefinitions,SectionDefinitionExposers.ID.Equal(EventDomMapper.EventProperties.SectionDefinitionId.Id), section);
+			Log($"Installed {section.GetName()} Section Definition");
 		}
 
 		private void InstallAdditionalPackagesSection(DomHelper helper)
@@ -91,6 +93,7 @@
                 .Build();
 
 			Import(helper.SectionDefinitions, SectionDefinitionExposers.ID.Equal(EventDomMapper.Languages.SectionDefinitionId.Id), section);
+			Log($"Installed {section.GetName()} Section Definition");
 		}
 
 		private void InstallEventDefinition(DomHelper helper)
@@ -113,7 +116,9 @@
 					IsSoftDeleted = false,
 				})
 				.Build();
-				Import(helper.DomDefinitions, DomDefinitionExposers.Id.Equal(EventDomMapper.DomDefinitionId.Id), definition);
+
+			Import(helper.DomDefinitions, DomDefinitionExposers.Id.Equal(EventDomMapper.DomDefinitionId.Id), definition);
+			Log($"Installed {definition.Name} Definition");
 		}
 
 		private void InstallEvent(DomHelper helper)

@@ -13,6 +13,8 @@ DATE		VERSION		AUTHOR			COMMENTS
 
 using System;
 
+using EventInstallBackEnd.DOM;
+
 using Skyline.AppInstaller;
 using Skyline.DataMiner.Automation;
 using Skyline.DataMiner.Net.AppPackages;
@@ -37,12 +39,12 @@ internal class Script
 			var installer = new AppInstaller(Engine.SLNetRaw, context);
 			installer.InstallDefaultContent();
 
-            ////string setupContentPath = installer.GetSetupContentDirectory();
+			////string setupContentPath = installer.GetSetupContentDirectory();
 
-            // Custom installation logic can be added here for each individual install package.
-            var domInstaller = new EventInstallBackEnd.DOM.DomInstaller(engine.GetUserConnection(), installer.Log);
-            domInstaller.InstallDefaultContent();
-        }
+			// Custom installation logic can be added here for each individual install package.
+			var domInstaller = new DomInstaller(engine.GetUserConnection(), installer.Log);
+			domInstaller.InstallDefaultContent();
+		}
 		catch (Exception e)
 		{
 			engine.ExitFail($"Exception encountered during installation: {e}");

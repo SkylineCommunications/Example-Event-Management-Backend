@@ -10,8 +10,3 @@ vsspell_ignored_words = File:allowed_words.dic
 
 [*.cs]
 dotnet_sort_system_directives_first = true
-
-# stylecop analyzers
-dotnet_diagnostic.SA1118.severity = none
-dotnet_diagnostic.SA1516.severity = none
-dotnet_diagnostic.S2479.severity = none

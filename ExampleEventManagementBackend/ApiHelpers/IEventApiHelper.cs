@@ -1,21 +1,22 @@
-﻿using Skyline.DataMiner.Net;
-using Skyline.DataMiner.SDM;
-
-namespace Skyline.DataMiner.Utils.Examples.EventManager.ApiHelpers
+﻿namespace Skyline.DataMiner.Utils.Examples.EventManagement.ApiHelpers
 {
-    /// <summary>
-    /// Provides an interface for interacting with event-related API helpers.
-    /// </summary>
-    public interface IEventApiHelper
-    {
-        /// <summary>
-        /// Gets the connection instance.
-        /// </summary>
-        IConnection Connection { get; }
+	using Skyline.DataMiner.Net;
+	using Skyline.DataMiner.SDM;
+	using Skyline.DataMiner.Utils.Examples.EventManagement.Models;
 
-        /// <summary>
-        /// Gets the repository for managing events.
-        /// </summary>
-        IBulkRepository<Models.Event> Events { get; }
-    }
+	/// <summary>
+	/// Provides an interface for interacting with event-related API helpers.
+	/// </summary>
+	public interface IEventApiHelper
+	{
+		/// <summary>
+		/// Gets the connection instance.
+		/// </summary>
+		IConnection Connection { get; }
+
+		/// <summary>
+		/// Gets the repository for managing events.
+		/// </summary>
+		IBulkRepository<Event> Events { get; }
+	}
 }

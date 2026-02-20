@@ -1,32 +1,29 @@
-﻿namespace Skyline.DataMiner.Utils.Examples.EventManager.ApiHelpers
+﻿namespace Skyline.DataMiner.Utils.Examples.EventManagement.ApiHelpers
 {
-    using Skyline.DataMiner.Net;
-    using Skyline.DataMiner.SDM;
-    using Skyline.DataMiner.Utils.Examples.EventManager.Models;
+	using Skyline.DataMiner.Net;
+	using Skyline.DataMiner.SDM;
+	using Skyline.DataMiner.Utils.Examples.EventManagement.Models;
 
-    public class EventApiHelper : IEventApiHelper
-    {
-        private readonly IBulkRepository<Event> _Events;
+	/// <summary>
+	/// Provides helper methods and repositories for managing events through the DataMiner API.
+	/// </summary>
+	public class EventApiHelper : IEventApiHelper
+	{
+		/// <summary>
+		/// Initializes a new instance of the <see cref="EventApiHelper"/> class. 
+		/// </summary>
+		/// <param name="connection">The connection instance.</param>
+		public EventApiHelper(IConnection connection)
+		{
+			Connection = connection;
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="EventApiHelper"/> class. 
-        /// </summary>
-        /// <param name="connection">The connection instance.</param>
-        public EventApiHelper(IConnection connection)
-        {
-            Connection = connection;
+			Events = new EventDomRepository(connection);
+		}
 
-            _Events = new EventDomRepository(connection);
-        }
+		/// <inheritdoc />
+		public IConnection Connection { get; }
 
-        /// <summary>
-        /// Gets the connection instance.
-        /// </summary>
-        public IConnection Connection { get; }
-
-        /// <summary>
-        /// Gets the repository for managing events.
-        /// </summary>
-        public IBulkRepository<Models.Event> Events { get { return _Events; } }
-    }
+		/// <inheritdoc />
+		public IBulkRepository<Event> Events { get; }
+	}
 }
