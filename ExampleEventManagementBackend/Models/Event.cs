@@ -38,9 +38,9 @@
 		public EventType Type { get; set; }
 
 		/// <summary>
-		/// Gets or sets the priority of the event.
+		/// Gets or sets the status of the event.
 		/// </summary>
-		public EventPriority Priority { get; set; }
+		public EventStatus Status { get; set; }
 
 		/// <summary>
 		/// Gets or sets the list of languages associated with the event.

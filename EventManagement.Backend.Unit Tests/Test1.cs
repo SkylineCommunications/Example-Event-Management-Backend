@@ -26,7 +26,7 @@
 				Start = DateTime.Now,
 				End = DateTime.Now.AddHours(1),
 				Type = EventType.Pro,
-				Priority = EventPriority.High,
+				Status = EventStatus.Done,
 				Languages =
 				[
 					new()
@@ -61,7 +61,7 @@
 			readEvent[0].Start.Should().Be(@event.Start);
 			readEvent[0].End.Should().Be(@event.End);
 			readEvent[0].Type.Should().Be(@event.Type);
-			readEvent[0].Priority.Should().Be(@event.Priority);
+			readEvent[0].Status.Should().Be(@event.Status);
 			readEvent[0].Languages.Should().NotBeNull();
 			readEvent[0].Languages.Should().HaveCount(3);
 			readEvent[0].Languages[0].Name.Should().Be(@event.Languages[0].Name);

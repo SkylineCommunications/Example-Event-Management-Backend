@@ -53,11 +53,11 @@
  					.WithID(EventDomMapper.EventProperties.Priority)
  					.WithName(nameof(EventDomMapper.EventProperties.Priority))
  					.WithIsOptional(true)
- 					.WithTooltip("The priority of the event")
+ 					.WithTooltip("The status of the event")
  					.WithEnumType(GenericEnumFieldDescriptorBuilder.EnumType.Int)
- 					.AddEnumValue(new GenericEnumEntry<int>("Low", 0))
- 					.AddEnumValue(new GenericEnumEntry<int>("Medium", 1))
- 					.AddEnumValue(new GenericEnumEntry<int>("High", 2)))
+ 					.AddEnumValue(new GenericEnumEntry<int>("Requested", 0))
+ 					.AddEnumValue(new GenericEnumEntry<int>("Processing", 1))
+ 					.AddEnumValue(new GenericEnumEntry<int>("Done", 2)))
 				.Build();
 
 			Import(helper.SectionDefinitions,SectionDefinitionExposers.ID.Equal(EventDomMapper.EventProperties.SectionDefinitionId.Id), section);

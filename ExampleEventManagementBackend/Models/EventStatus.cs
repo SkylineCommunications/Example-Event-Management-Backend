@@ -1,23 +1,23 @@
 ﻿namespace Skyline.DataMiner.Utils.Examples.EventManagement.Models
 {
     /// <summary>
-    /// Represents the priority level of an event.
+    /// Represents the status of an event.
     /// </summary>
-    public enum EventPriority
+    public enum EventStatus
     {
         /// <summary>
-        /// Low priority event.
+        /// Requesting event status.
         /// </summary>
-        Low,
+        Requested,
 
         /// <summary>
-        /// Medium priority event.
+        /// Processing event status.
         /// </summary>
-        Medium,
+        Processing,
 
         /// <summary>
-        /// High priority event.
+        /// Done event status.
         /// </summary>
-        High,
+        Done,
     }
 }
