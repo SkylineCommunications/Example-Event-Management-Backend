@@ -33,7 +33,7 @@ id: 7c402377-ce88-479f-a249-5c086b5d84bd
 #   Max length: 100 characters.
 #   Cannot contain newlines.
 #   Cannot contain leading or trailing whitespace characters.
-title: EventManagerBackendInstaller
+title: Event Manager Backend Installer
 
 # [Optional]
 # General information about the Catalog item.

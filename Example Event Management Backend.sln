@@ -1,12 +1,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11505.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils.Examples.EventManager", "ExampleEventManagementBackend\Utils.Examples.EventManager.csproj", "{0EA0FE7C-1648-4906-A9A3-C5E4DA3ED7D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagement.Backend", "ExampleEventManagementBackend\EventManagement.Backend.csproj", "{0EA0FE7C-1648-4906-A9A3-C5E4DA3ED7D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagerBackendInstaller", "EventManagerBackendInstaller\EventManagerBackendInstaller.csproj", "{58A7DB71-CA42-4BC3-A939-92120DFDC33A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagement.Installer", "EventManagerBackendInstaller\EventManagement.Installer.csproj", "{58A7DB71-CA42-4BC3-A939-92120DFDC33A}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Shared", "Shared\Shared.shproj", "{E01FEFB0-C0E1-4043-AC36-D7089931E670}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EventManagement.Shared", "EventManagement.Shared\EventManagement.Shared.shproj", "{78CB618D-7B44-4FF4-A73A-E02DAB56FAC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagement.Backend.Unit Tests", "EventManagement.Backend.Unit Tests\EventManagement.Backend.Unit Tests.csproj", "{2D040660-3FE2-43A3-AAA9-86FC2F95EDCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +24,10 @@ Global
 		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D040660-3FE2-43A3-AAA9-86FC2F95EDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D040660-3FE2-43A3-AAA9-86FC2F95EDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D040660-3FE2-43A3-AAA9-86FC2F95EDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D040660-3FE2-43A3-AAA9-86FC2F95EDCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,8 +36,8 @@ Global
 		SolutionGuid = {1C9C1820-AA26-4AE7-95D9-0E178C2B979D}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Shared\Shared.projitems*{0ea0fe7c-1648-4906-a9a3-c5e4da3ed7d9}*SharedItemsImports = 5
-		Shared\Shared.projitems*{58a7db71-ca42-4bc3-a939-92120dfdc33a}*SharedItemsImports = 5
-		Shared\Shared.projitems*{e01fefb0-c0e1-4043-ac36-d7089931e670}*SharedItemsImports = 13
+		EventManagement.Shared\EventManagement.Shared.projitems*{0ea0fe7c-1648-4906-a9a3-c5e4da3ed7d9}*SharedItemsImports = 5
+		EventManagement.Shared\EventManagement.Shared.projitems*{58a7db71-ca42-4bc3-a939-92120dfdc33a}*SharedItemsImports = 5
+		EventManagement.Shared\EventManagement.Shared.projitems*{78cb618d-7b44-4ff4-a73a-e02dab56fac0}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
