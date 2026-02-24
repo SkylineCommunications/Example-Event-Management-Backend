@@ -2,13 +2,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
 VisualStudioVersion = 18.3.11505.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagement.Backend", "ExampleEventManagementBackend\EventManagement.Backend.csproj", "{0EA0FE7C-1648-4906-A9A3-C5E4DA3ED7D9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagement.Installer", "EventManagerBackendInstaller\EventManagement.Installer.csproj", "{58A7DB71-CA42-4BC3-A939-92120DFDC33A}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EventManagement.Shared", "EventManagement.Shared\EventManagement.Shared.shproj", "{78CB618D-7B44-4FF4-A73A-E02DAB56FAC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagement.Backend", "EventManagement.Backend\EventManagement.Backend.csproj", "{0EA0FE7C-1648-4906-A9A3-C5E4DA3ED7D9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagement.Backend.Unit Tests", "EventManagement.Backend.Unit Tests\EventManagement.Backend.Unit Tests.csproj", "{2D040660-3FE2-43A3-AAA9-86FC2F95EDCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagement.Installer", "EventManagement.Installer\EventManagement.Installer.csproj", "{58A7DB71-CA42-4BC3-A939-92120DFDC33A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EventManagement.Shared", "EventManagement.Shared\EventManagement.Shared.shproj", "{78CB618D-7B44-4FF4-A73A-E02DAB56FAC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

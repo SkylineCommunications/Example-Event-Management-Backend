@@ -16,7 +16,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\ExampleEventManagementBackend\EventManagement.Backend.csproj" />
+	  <ProjectReference Include="..\EventManagement.Backend\EventManagement.Backend.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
