@@ -55,7 +55,7 @@ eventApi.Events.Create(newEvent);
 var allEvents = eventApi.Events.Read(new TRUEFilterElement<Event>());
 
 // Update an event
-newEvent.Status = EventStatus.InProgress;
+newEvent.Status = EventStatus.Processing;
 eventApi.Events.Update(newEvent);
 ```
 
