@@ -13,7 +13,7 @@ DATE		VERSION		AUTHOR			COMMENTS
 
 using System;
 
-using EventInstallBackEnd.DOM;
+using EventManagement.Installer.DOM;
 
 using Skyline.AppInstaller;
 using Skyline.DataMiner.Automation;
