@@ -1,4 +1,4 @@
-﻿namespace EventInstallBackEnd.DOM
+﻿namespace EventManagement.Installer.DOM
 {
 	using System;
 
@@ -7,7 +7,7 @@
 	using Skyline.DataMiner.Net.Messages.SLDataGateway;
 	using Skyline.DataMiner.Net.Sections;
     using Skyline.DataMiner.Utils.DOM.Builders;
-    using Skyline.DataMiner.Utils.Examples.EventManagement.Models;
+    using Skyline.DataMiner.Learning.EventManagement.Models;
 
     internal partial class DomInstaller
 	{

@@ -1,4 +1,4 @@
-﻿namespace Skyline.DataMiner.Utils.Examples.EventManagement.Models
+﻿namespace Skyline.DataMiner.Learning.EventManagement.Models
 {
 	using System;
 	using System.Collections.Generic;

@@ -1,4 +1,4 @@
-﻿namespace Skyline.DataMiner.Utils.Examples.EventManagement.Models
+﻿namespace Skyline.DataMiner.Learning.EventManagement.Models
 {
     /// <summary>
     /// Represents the type of event.

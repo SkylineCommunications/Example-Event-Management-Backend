@@ -1,8 +1,8 @@
-﻿namespace Skyline.DataMiner.Utils.Examples.EventManagement.ApiHelpers
+﻿namespace Skyline.DataMiner.Learning.EventManagement.ApiHelpers
 {
 	using Skyline.DataMiner.Net;
 	using Skyline.DataMiner.SDM;
-	using Skyline.DataMiner.Utils.Examples.EventManagement.Models;
+	using Skyline.DataMiner.Learning.EventManagement.Models;
 
 	/// <summary>
 	/// Provides an interface for interacting with event-related API helpers.

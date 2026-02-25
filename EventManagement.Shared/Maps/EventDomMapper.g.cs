@@ -4,7 +4,7 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace Skyline.DataMiner.Utils.Examples.EventManagement.Models
+namespace Skyline.DataMiner.Learning.EventManagement.Models
 {
     using System;
     using Skyline.DataMiner.Net.Apps.DataMinerObjectModel;

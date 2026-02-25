@@ -4,8 +4,8 @@
 
 	using Skyline.DataMiner.Net.Messages.SLDataGateway;
 	using Skyline.DataMiner.Utils.DOM.UnitTesting;
-	using Skyline.DataMiner.Utils.Examples.EventManagement.ApiHelpers;
-	using Skyline.DataMiner.Utils.Examples.EventManagement.Models;
+	using Skyline.DataMiner.Learning.EventManagement.ApiHelpers;
+	using Skyline.DataMiner.Learning.EventManagement.Models;
 
 	[TestClass]
 	public sealed class RepositoryTests

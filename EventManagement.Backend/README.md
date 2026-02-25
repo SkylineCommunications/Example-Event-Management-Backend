@@ -1,4 +1,4 @@
-# Skyline.DataMiner.Utils.Examples.EventManagement
+# Skyline.DataMiner.Learning.EventManagement
 
 ## About
 

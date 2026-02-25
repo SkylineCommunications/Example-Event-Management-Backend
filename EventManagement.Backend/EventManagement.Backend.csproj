@@ -3,8 +3,8 @@
 		<TargetFramework>net48</TargetFramework>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
-		<AssemblyName>Skyline.DataMiner.Utils.Examples.EventManagement</AssemblyName>
-		<RootNamespace>Skyline.DataMiner.Utils.Examples.EventManagement</RootNamespace>
+		<AssemblyName>Skyline.DataMiner.Learning.EventManagement</AssemblyName>
+		<RootNamespace>Skyline.DataMiner.Learning.EventManagement</RootNamespace>
 		<PackageVersion>1.0.3</PackageVersion>
 		<Version>1.0.3</Version>
 		<PackageTags>Skyline;DataMiner</PackageTags>
