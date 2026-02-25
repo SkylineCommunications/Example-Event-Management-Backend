@@ -17,7 +17,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>SkylineCommunications</Authors>
 		<Company>Skyline Communications</Company>
-		<Description></Description>
+		<Description>Example backend abstraction for event management demonstrating best practices for DataMiner DOM-based solutions. Provides strongly-typed models, repository pattern, and API helpers for managing events with persistent storage through DataMiner Object Model. Ideal for learning and as a template for building DataMiner backend integrations.</Description>
 	</PropertyGroup>
 
 	<ItemGroup>
