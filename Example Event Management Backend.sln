@@ -10,6 +10,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagement.Installer",
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EventManagement.Shared", "EventManagement.Shared\EventManagement.Shared.shproj", "{78CB618D-7B44-4FF4-A73A-E02DAB56FAC0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6CA5D633-65BE-4782-8125-1ECE3CC79864}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{12AA5E76-07DA-41C1-9399-3441578175B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{429ABF6D-F35E-426C-9316-52E1F75A4A15}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\DataMiner CICD Internal Nuget Solution.yml = .github\workflows\DataMiner CICD Internal Nuget Solution.yml
+		.github\workflows\DataMiner CICD Nuget Solution.yml = .github\workflows\DataMiner CICD Nuget Solution.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,17 +36,21 @@ Global
 		{0EA0FE7C-1648-4906-A9A3-C5E4DA3ED7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EA0FE7C-1648-4906-A9A3-C5E4DA3ED7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EA0FE7C-1648-4906-A9A3-C5E4DA3ED7D9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2D040660-3FE2-43A3-AAA9-86FC2F95EDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2D040660-3FE2-43A3-AAA9-86FC2F95EDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D040660-3FE2-43A3-AAA9-86FC2F95EDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D040660-3FE2-43A3-AAA9-86FC2F95EDCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58A7DB71-CA42-4BC3-A939-92120DFDC33A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12AA5E76-07DA-41C1-9399-3441578175B1} = {6CA5D633-65BE-4782-8125-1ECE3CC79864}
+		{429ABF6D-F35E-426C-9316-52E1F75A4A15} = {12AA5E76-07DA-41C1-9399-3441578175B1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1C9C1820-AA26-4AE7-95D9-0E178C2B979D}
