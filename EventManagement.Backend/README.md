@@ -2,7 +2,62 @@
 
 ## About
 
+An example backend abstraction for an event management solution. This NuGet package provides a lightweight, extensible DataMiner-compatible scaffold for handling, storing, and integrating events using DataMiner's DOM (DataMiner Object Model) framework.
 
+This example demonstrates best practices for building DataMiner backend solutions with:
+- Strongly-typed domain models
+- Repository pattern for data access
+- DOM integration for persistent storage
+- Clean API surface for consuming applications
+
+## Features
+
+- **Event Management Models**: Comprehensive event data model including status, type, language, and audio type classifications
+- **API Helper**: Simple connection-based API for accessing event repositories
+- **DOM Integration**: Automatic persistence using DataMiner Object Model with SDM mapper support
+- **Bulk Operations**: Repository pattern supporting efficient bulk read/write operations
+- **Type Safety**: Strongly-typed models with enum-based status and type management
+
+## Getting Started
+
+### Installation
+
+Install the NuGet package in your DataMiner Automation script or solution:
+
+```bash
+Install-Package Skyline.DataMiner.Learning.EventMangement
+```
+
+### Basic Usage
+
+```csharp
+using Skyline.DataMiner.Learning.EventManagement.ApiHelpers;
+using Skyline.DataMiner.Learning.EventManagement.Models;
+
+// Initialize the API helper with your DataMiner connection
+var eventApi = new EventApiHelper(engine.GetUserConnection());
+
+// Create a new event
+var newEvent = new Event
+{
+    Identifier = Guid.NewGuid().ToString(),
+    Name = "Skyline Empower 2025",
+    Type = EventType.Advanced,
+    Status = EventStatus.Requested,
+    StartDate = DateTime.Now.AddMonths(1),
+    EndDate = DateTime.Now.AddMonths(1).AddDays(3)
+};
+
+// Store the event
+eventApi.Events.Create(newEvent);
+
+// Retrieve all events
+var allEvents = eventApi.Events.Read(new TRUEFilterElement<Event>());
+
+// Update an event
+newEvent.Status = EventStatus.InProgress;
+eventApi.Events.Update(newEvent);
+```
 
 ### About DataMiner
 
@@ -18,6 +73,3 @@ A unique catalog of 7000+ connectors already exists. In addition, you can levera
 ### About Skyline Communications
 
 At Skyline Communications, we deal in world-class solutions that are deployed by leading companies around the globe. Check out [our proven track record](https://aka.dataminer.services/about-skyline) and see how we make our customers' lives easier by empowering them to take their operations to the next level.
-
-<!-- Uncomment below and add more info to provide more information about how to use this package. -->
-<!-- ## Getting Started -->

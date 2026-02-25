@@ -21,8 +21,8 @@
 			// Act
 			var @event = new Event
 			{
-				Name = "Test Event",
-				Description = "This is a test event.",
+				Name = "Empower",
+				Description = "Skyline Empower 2025.",
 				Start = DateTime.Now,
 				End = DateTime.Now.AddHours(1),
 				Type = EventType.Pro,
