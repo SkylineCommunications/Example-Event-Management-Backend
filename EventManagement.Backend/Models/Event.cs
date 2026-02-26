@@ -8,9 +8,9 @@
 	/// <summary>
 	/// Represents an event in the event management system.
 	/// </summary>
-	[GenerateExposers]
-	[SdmDomStorage("exampleventmgmt")]
-	public class Event : SdmObject<Event>
+
+	
+	public class Event
 	{
 		/// <summary>
 		/// Gets or sets the name of the event.

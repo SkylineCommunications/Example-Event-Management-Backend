@@ -9,6 +9,6 @@
     <Import_RootNamespace>EventManagement.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Maps\EventDomMapper.g.cs" />
+    <Folder Include="$(MSBuildThisFileDirectory)Maps\" />
   </ItemGroup>
 </Project>
