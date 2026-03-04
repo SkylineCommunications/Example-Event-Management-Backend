@@ -26,7 +26,6 @@ namespace Skyline.DataMiner.Learning.EventManagement.Models
             internal static FieldDescriptorID Start = new FieldDescriptorID(new Guid("0c2b0a42-7914-478e-958d-6fc0bdbb4369"));
             internal static FieldDescriptorID End = new FieldDescriptorID(new Guid("c993bef1-2691-44f1-a264-d67ea31b6b30"));
             internal static FieldDescriptorID Type = new FieldDescriptorID(new Guid("eb067772-fc46-47ac-b41e-b6fa752878a7"));
-            internal static FieldDescriptorID Priority = new FieldDescriptorID(new Guid("ff7a1458-72d2-4998-8ec0-1b49ffd9882c"));
             internal static FieldDescriptorID Status = new FieldDescriptorID(new Guid("21f92e92-33de-46a8-9e0a-a2a276d0743b"));
         }
 
