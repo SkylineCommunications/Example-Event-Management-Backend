@@ -5,8 +5,8 @@
 		<Nullable>disable</Nullable>
 		<AssemblyName>Skyline.DataMiner.Learning.EventManagement</AssemblyName>
 		<RootNamespace>Skyline.DataMiner.Learning.EventManagement</RootNamespace>
-		<PackageVersion>1.0.3</PackageVersion>
-		<Version>1.0.3</Version>
+		<PackageVersion>1.0.1</PackageVersion>
+		<Version>1.0.1</Version>
 		<PackageTags>Skyline;DataMiner</PackageTags>
 		<PackageProjectUrl>https://skyline.be</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
