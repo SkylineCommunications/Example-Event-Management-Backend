@@ -1,8 +1,8 @@
-# Event Management Backend Installer
+# Example Event Management Backend
 
 ## Overview
 
-The **Event Management Backend Installer** is an essential companion to the [Skyline.DataMiner.Learning.EventManagement](https://www.nuget.org/packages/Skyline.DataMiner.Learning.EventManagement/) NuGet package. This installer automatically sets up all required DataMiner Object Model (DOM) definitions, enabling you to start managing events immediately.
+The **Example Event Management Backend** is an essential companion to the [Skyline.DataMiner.Learning.EventManagement](https://www.nuget.org/packages/Skyline.DataMiner.Learning.EventManagement/) NuGet package. This installer automatically sets up all required DataMiner Object Model (DOM) definitions, enabling you to start managing events immediately.
 
 This installer was created for Skyline Empower demonstrations and serves as a best-practice example for setting up SDM-based solutions in DataMiner.
 
