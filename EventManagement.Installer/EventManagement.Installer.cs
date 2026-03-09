@@ -12,12 +12,14 @@ DATE		VERSION		AUTHOR			COMMENTS
 */
 
 using System;
+using System.IO;
 
 using EventManagement.Installer.DOM;
 
 using Skyline.AppInstaller;
 using Skyline.DataMiner.Automation;
 using Skyline.DataMiner.Net.AppPackages;
+using Skyline.DataMiner.Utils.SecureCoding.SecureIO;
 
 /// <summary>
 /// DataMiner Script Class.
@@ -37,11 +39,15 @@ internal class Script
 			engine.Timeout = new TimeSpan(0, 10, 0);
 			engine.GenerateInformation("Starting installation");
 			var installer = new AppInstaller(Engine.SLNetRaw, context);
+			if (!IsSdmInstalled(installer))
+			{
+				installer.Log($"Prerequisite check failed: You need to install SDM first.");
+				engine.ExitFail($"Prerequisite check failed: You need to install SDM first.");
+				return;
+			}
+
 			installer.InstallDefaultContent();
 
-			////string setupContentPath = installer.GetSetupContentDirectory();
-
-			// Custom installation logic can be added here for each individual install package.
 			var domInstaller = new DomInstaller(engine.GetUserConnection(), installer.Log);
 			domInstaller.InstallDefaultContent();
 		}
@@ -49,5 +55,21 @@ internal class Script
 		{
 			engine.ExitFail($"Exception encountered during installation: {e}");
 		}
+	}
+
+	private static bool IsSdmInstalled(AppInstaller installer)
+	{
+		// Check if SDM is installed
+		var solutionLibrariesFolder = @"C:\Skyline DataMiner\ProtocolScripts\DllImport\SolutionLibraries";
+		var devPackFolder = SecurePath.ConstructSecurePathWithSubDirectories(solutionLibrariesFolder, "SDM.Abstractions");
+		var devPackPath = SecurePath.ConstructSecurePathWithSubDirectories(devPackFolder, "Skyline.DataMiner.Dev.Utils.SDM.Abstractions.dll");
+
+		var result = File.Exists(devPackPath);
+		if (!result)
+		{
+			installer.Log($"Prerequisite check failed: You need to install SDM first.");
+		}
+
+		return result;
 	}
 }
