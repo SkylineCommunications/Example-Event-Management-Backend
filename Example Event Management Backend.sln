@@ -25,6 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\DataMiner CICD Internal Nuget Solution.yml = .github\workflows\DataMiner CICD Internal Nuget Solution.yml
 		.github\workflows\DataMiner CICD Nuget Solution.yml = .github\workflows\DataMiner CICD Nuget Solution.yml
+		.github\workflows\DataMiner CICD Package.yml = .github\workflows\DataMiner CICD Package.yml
 	EndProjectSection
 EndProject
 Global
